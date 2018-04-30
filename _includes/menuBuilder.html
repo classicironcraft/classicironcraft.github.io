@@ -1,0 +1,18 @@
+<ul class="photberry_menu">
+	{% for page in site.data.toc %}
+		{% if page.subItems %}
+			<li 
+				class="menu-item-has-children">
+				<a href="javascript:void(0)">{{ page.title }}</a>
+				<ul class="photberry_sub_menu">
+					<li class="photberry_li_back"><a href="javascript:void(0)">Back</a></li>
+					{% for subItem in page.subItems %}
+						<li><a href="{{ subItem.url }}">{{ subItem.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</li>
+		{% else %}
+			<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+		{% endif %}
+	{% endfor %}
+</ul>

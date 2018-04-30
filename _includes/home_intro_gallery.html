@@ -1,0 +1,46 @@
+{% assign all_cats_intro = "" | split: "" %}
+
+{% for collection in site.categories %}
+
+	{% assign categoryType = collection.title | downcase %}
+
+	{% assign loopCount = 0 %}
+
+	{% for item in site.data[ categoryType ] %}
+
+		{% if loopCount == 0 %}
+			{% assign all_cats_intro = all_cats_intro | push: item %}
+		{% endif %}
+
+		{% assign loopCount = loopCount | plus:1 %}
+
+	{% endfor %}
+
+{% endfor %}
+
+<section class="photberry_gallery_section photberry_gallery_section2">
+
+	<h3>Our Product Categories</h3>
+
+	<div class="photberry_grid1">
+
+		{% assign loopCount = 1 %}
+
+		{% for item in all_cats_intro %}
+
+			<div class="photberry_grid_item">
+				<a href="/{{ item.cat_name }}">
+					<img src="/assets/img/{{ item.cat_name }}/{{ item.src }}" alt="" />
+					<div class="photberry_grid_content homepage_grid">
+						<h6>{{ item.cat_name }}</h6>
+					</div>
+				</a>
+			</div>
+
+			{% assign loopCount = loopCount | plus:1 %}
+
+		{% endfor %}
+
+	</div>
+
+</section>

@@ -1,0 +1,8 @@
+<ul class="">
+	{% for page in site.data.toc %}
+		{% if page.subItems %}
+		{% else %}
+			<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+		{% endif %}
+	{% endfor %}
+</ul>

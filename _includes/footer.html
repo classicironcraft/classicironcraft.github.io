@@ -1,0 +1,57 @@
+<footer class="photberry_footer">
+
+	<div class="photberry_container">
+
+		<div class="row photberry_footer_content">
+
+			<div class="col col-6 photberry_widget photberry_footer_contact">
+
+				<h6 class="photberry_widget_title">CONTACT US</h6>
+
+				<div class="">
+
+					<div class="photberry_footer_contact_block">
+
+						<div class="photberry_cont_value"><i class="fa fa-map-marker"></i> 
+							12 Olds Close, Olds Approach, Tolpits Lane, Watford, Hertfordshire WD18 9RU
+						</div>
+
+					</div>
+
+					<div class="photberry_footer_contact_block">
+						<div class="photberry_cont_value"><i class="fa fa-phone"></i> +44 (0) 1923 712883</div>
+					</div>
+
+					<div class="photberry_footer_contact_block">
+						<div class="photberry_cont_value"><i class="fa fa-phone"></i> +44 (0) 7952 796074</div>
+					</div>
+
+					<div class="photberry_footer_contact_block">
+						<div class="photberry_cont_value"><i class="fa fa-envelope"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col col-3 photberry_widget photberry_useful_links">
+
+				<h6 class="photberry_widget_title">Useful Links</h6>
+
+				{% include footer_page_menu.html %}
+
+			</div>
+
+			<div class="col col-3 photberry_widget photberry_useful_links">
+
+				<h6 class="photberry_widget_title">Category Galleries</h6>
+
+				{% include footer_category_menu.html %}
+
+			</div>
+
+		</div>
+
+	</div>
+
+</footer>

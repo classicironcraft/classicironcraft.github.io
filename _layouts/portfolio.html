@@ -1,0 +1,190 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+{% assign subArraySize = 4 %}
+{% assign all_cats_primary = "" | split: "" %}
+{% assign all_cats_more = "" | split: "" %}
+
+{% assign loopCount = 0 %}
+
+{% for item in site.data.balconies %}
+
+	{% if loopCount == 0 %}
+		{% assign all_cats_primary = all_cats_primary | push: item %}
+	{% else %}
+		{% assign all_cats_more = all_cats_more | push: item %}
+	{% endif %}
+
+	{% assign reminder = forloop.index | modulo: subArraySize %}
+	{% if reminder == 0 or forloop.last %}
+		{% assign loopCount = loopCount | plus:1 %}
+	{% endif %}
+
+{% endfor %}
+
+{% assign loopCount = 0 %}
+
+{% for item in site.data.handrails %}
+
+	{% if loopCount == 0 %}
+		{% assign all_cats_primary = all_cats_primary | push: item %}
+	{% else %}
+		{% assign all_cats_more = all_cats_more | push: item %}
+	{% endif %}
+
+	{% assign reminder = forloop.index | modulo: subArraySize %}
+	{% if reminder == 0 or forloop.last %}
+		{% assign loopCount = loopCount | plus:1 %}
+	{% endif %}
+
+{% endfor %}
+
+{% assign loopCount = 0 %}
+
+{% for item in site.data.balustrades %}
+
+	{% if loopCount == 0 %}
+		{% assign all_cats_primary = all_cats_primary | push: item %}
+	{% else %}
+		{% assign all_cats_more = all_cats_more | push: item %}
+	{% endif %}
+
+	{% assign reminder = forloop.index | modulo: subArraySize %}
+	{% if reminder == 0 or forloop.last %}
+		{% assign loopCount = loopCount | plus:1 %}
+	{% endif %}
+
+{% endfor %}
+
+{% assign loopCount = 0 %}
+
+{% for item in site.data.gates %}
+
+	{% if loopCount == 0 %}
+		{% assign all_cats_primary = all_cats_primary | push: item %}
+	{% else %}
+		{% assign all_cats_more = all_cats_more | push: item %}
+	{% endif %}
+
+	{% assign reminder = forloop.index | modulo: subArraySize %}
+	{% if reminder == 0 or forloop.last %}
+		{% assign loopCount = loopCount | plus:1 %}
+	{% endif %}
+
+{% endfor %}
+
+{% assign loopCount = 0 %}
+
+{% for item in site.data.railings %}
+
+	{% if loopCount == 0 %}
+		{% assign all_cats_primary = all_cats_primary | push: item %}
+	{% else %}
+		{% assign all_cats_more = all_cats_more | push: item %}
+	{% endif %}
+
+	{% assign reminder = forloop.index | modulo: subArraySize %}
+	{% if reminder == 0 or forloop.last %}
+		{% assign loopCount = loopCount | plus:1 %}
+	{% endif %}
+
+{% endfor %}
+
+{% assign loopCount = 0 %}
+
+{% for item in site.data.staircases %}
+
+	{% if loopCount == 0 %}
+		{% assign all_cats_primary = all_cats_primary | push: item %}
+	{% else %}
+		{% assign all_cats_more = all_cats_more | push: item %}
+	{% endif %}
+
+	{% assign reminder = forloop.index | modulo: subArraySize %}
+	{% if reminder == 0 or forloop.last %}
+		{% assign loopCount = loopCount | plus:1 %}
+	{% endif %}
+
+{% endfor %}
+
+{% assign loopCount = 0 %}
+
+{% for item in site.data.miscellaneous %}
+
+	{% if loopCount == 0 %}
+		{% assign all_cats_primary = all_cats_primary | push: item %}
+	{% else %}
+		{% assign all_cats_more = all_cats_more | push: item %}
+	{% endif %}
+
+	{% assign reminder = forloop.index | modulo: subArraySize %}
+	{% if reminder == 0 or forloop.last %}
+		{% assign loopCount = loopCount | plus:1 %}
+	{% endif %}
+
+{% endfor %}
+
+<body>
+
+	<div class="photberry_site_wrapper">
+
+		{% include mainmenu.html %}
+
+		<div class="photberry_main_wrapper photberry_portfolio_grid">
+			<div class="row">
+				<div class="col col-12 photberry_content photberry_section_w_margin">
+					
+					<h1 class="photberry_blog_title">Category Portfolio</h1>
+
+					<section class="photberry_portfolio_2col photberry_gallery_section photberry_gallery_section_masonry photberry_gallery_section3 photberry_portfolio_masonry_element">
+
+						{% assign categoryArray = site.categories | sort: 'order' %}
+
+						<div class=" button-group filters-button-group">
+							<button class="is-checked" data-filter="*">all</button>
+							{% for collection in categoryArray %}
+								{% assign categoryType = collection.title | downcase %}
+								<button data-filter=".{{categoryType}}">{{ collection.title }}</button>
+							{% endfor %}
+						</div>
+
+						<div class="photberry_grid2">
+
+							{% for item in all_cats_primary %}
+
+							<div class="photberry_grid_item2 {{ item.cat_name }} photberry_grid_item">
+								<a href="/{{ item.cat_name }}">
+									<img src="/assets/img/{{ item.cat_name }}/{{ item.src }}" alt="">
+									<div class="photberry_grid_content">
+										<h6 class="photberry_portfolio_category">{{ item.cat_name }}</h6>
+									</div>
+								</a>
+							</div>
+
+							{% endfor %}
+
+						</div>
+
+						<a class="photberry_button photberry_load_more" href="javascript:void(0)">Load More</a>
+
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			var portfolioElements = {{ all_cats_more | jsonify }};
+		</script>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include beforeBodyEnd.html %}
+
+</body>
+
+</html>

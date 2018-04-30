@@ -1,0 +1,48 @@
+title: Classic Ironcraft | We make metal work for you
+email: sales@classicironcraft.co.uk
+description: >- # this means to ignore newlines until "baseurl:"
+  We are a bespoke metalwork company working with traditional and contemporary designs. Manufacturing and installing gates, staircases, railings and all types of architectural and general metalwork, with over 35 years experience serving residential and commercial clients. Whether it is a simple bracket or an intricate staircase, we can help.
+
+keywords:
+  - classic ironcraft
+  - irconcraft
+  - metalwork
+  - traditional and contemporary
+  - manufacturing
+  - installation
+  - gates
+  - staircases
+  - railings
+  - architectural metalwork
+  - residential
+  - commercial
+  - handrails
+  - balustrades
+  - balconies
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.classicironcraft.co.uk/" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+plugins:
+  #- jekyll-feed
+
+collections:
+  categories:
+    output: true
+
+collections_dir: collections
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

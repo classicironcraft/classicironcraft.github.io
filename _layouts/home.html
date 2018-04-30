@@ -1,0 +1,53 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+<body>
+
+	<div class="photberry_site_wrapper">
+
+		{% include mainmenu.html %}
+
+		<div class="photberry_main_wrapper photberry_about1">
+
+			<div class="row">
+
+				<div class="col col-12 photberry_content">
+
+					<div class="photberry_container">
+
+						<section class="photberry_paragraphs central-p">
+							{{ page.content | markdownify }}
+						</section>
+
+					</div>
+
+					<section class="photberry_get_in_touch photberry_get_in_touch1">
+						<div class="photberry_get_in_touch_block">	
+							<div class="photberry_container">		
+								<h1>We&rsquo;ll make metal work for you!</h1>
+								<a class="photberry_button" href="/contact">get in touch</a>	
+							</div>	
+						</div>		
+					</section>
+
+					{% include home_intro_gallery.html %}
+
+				</div>
+
+			</div>
+			
+
+		</div>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include beforeBodyEnd.html %}
+
+</body>
+
+</html>

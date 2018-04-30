@@ -1,0 +1,81 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+<body>
+
+	<div class="photberry_site_wrapper">
+
+		{% include mainmenu.html %}
+
+		<div class="photberry_main_wrapper">
+
+			<div class="photberry_container">
+
+				<div class="row photberry_right_sidebar">
+
+					<div class="col col-9 photberry_content">
+
+						<h1 class="photberry_blog_title">{{ page.title }}</h1>
+
+						<section class="photberry_paragraphs">
+							{{ page.content | markdownify }}
+						</section>
+
+						{% include contact_form.html %}
+
+					</div>
+
+					<div class="col col-3 photberry_sidebar">
+
+						<div class="photberry_widget photberry_sidebar_about">
+
+							<h6 class="photberry_widget_title">Contact Information</h6>
+
+							<p>
+								<i class="fa fa-map-marker"></i> 
+								12 Olds Close, Olds Approach, Tolpits Lane, Watford, Hertfordshire WD18 9RU
+							</p>
+
+							<p>
+								<i class="fa fa-phone"></i> +44 (0) 1923 712883
+							</p>
+
+							<p>
+								<i class="fa fa-phone"></i> +44 (0) 7952 796074
+							</p>
+							
+							<p>
+								<i class="fa fa-envelope"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+							</p>
+
+						</div>
+
+						<div class="photberry_widget photberry_popular_tags">
+
+							<h6 class="photberry_widget_title">Product Categories</h6>
+
+							{% include footer_category_menu.html %}
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+				
+		</div>
+
+		{% include footer.html %}
+
+	</div>
+
+	{% include beforeBodyEnd.html %}
+
+</body>
+
+</html>

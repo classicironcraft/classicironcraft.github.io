@@ -1,0 +1,3384 @@
+/*
+[Master Stylesheet]
+[Table of contents]
+1.  General
+2.  Header
+3.  Footer
+4.  Sidebar
+5.  Slider
+6.  Typography
+7.  About-1
+8.  About-2
+9.  About-3
+10. About-4
+11. Book a Session
+12. Choose Your Package
+13. Testimonials
+14. Coming Soon
+15. 404
+16. Contact 01
+17. Contact 02
+18. Contact 03
+19. Blog Fullwidth
+20. Blog with Right Sidebar
+21. Blog with Left Sidebar
+22. Blog Grid
+23. Standard Post 
+24. Portfolio Grid
+25. Portfolio 1 Column
+26. Portfolio 2 Column
+27. Portfolio 3 Column
+28. Standard Portfolio
+29. Grid Portfolio 01
+30. Grid Portfolio 02
+31. Video and Images Slider
+32. Portrait Slider
+33. Split Gallery
+34. Responsive
+
+/* General */
+ * {
+     margin: 0;
+     padding: 0;
+}
+ html {
+     width: 100%;
+     overflow-x: hidden;
+     position: static;
+}
+ body {
+     font-family: "Roboto";
+     font-size: 14px;
+     line-height: 21px;
+     font-weight: 400;
+     color: #454e57;
+     position: relative;
+     background: #f7f7f7;
+      -webkit-appearance: none;
+     background: -webkit-linear-gradient(left, #f7f7f7 0%, #f7f7f7 50%, #ffffff 51%, #ffffff 100%);
+     background: -o-linear-gradient(left, #f7f7f7 0%, #f7f7f7 50%, #ffffff 51%, #ffffff 100%);
+     background: linear-gradient(to right, #f7f7f7 0%, #f7f7f7 50%, #ffffff 51%, #ffffff 100%);
+ }
+ img {
+     max-width: 100%;
+     height: auto;
+     margin: 0 auto;
+}
+ p{
+     margin: 0 0 16px 0;
+}
+ ul, ol {
+    margin: 0 0 0 15px ; 
+    padding: 0;
+}
+li{
+    padding: 5px 0 5px 5px;
+    margin: 0;
+}
+ul li{
+   list-style: square;
+}
+
+ h1, h2, h3, h4, h5, h6 {
+     color: #202a34;
+     font-family: "Oswald";
+     font-weight: 400;
+     margin-top: 0;
+     margin-bottom: 35px;
+     word-wrap: break-word;
+     text-align: center;
+}
+ h1{
+     font-size: 50px;
+     line-height: 60px;
+     margin-bottom: 23px;
+}
+ h2 {
+     font-size: 40px;
+     line-height: 50px;
+     margin-bottom: 25px;
+}
+ h3 {
+     font-size: 30px;
+     line-height: 40px;
+     margin-bottom: 25px;
+}
+ h4 {
+     font-size: 26px;
+     line-height: 36px;
+     margin-bottom: 27px;
+}
+ h5 {
+     font-size: 16px;
+     line-height: 26px;
+     margin-bottom: 28px;
+     letter-spacing: 0.8px;
+     text-transform: uppercase;
+}
+ h6 {
+     font-size: 13px;
+     line-height: 23px;
+     margin-bottom: 28px;
+     letter-spacing: 0.7px;
+     text-transform: uppercase;
+}
+a{
+     text-decoration: none;
+     display: inline-block;
+     color: #202a34;
+     transition: all 0.3s;
+}
+section{
+    padding: 0 0 72px 0;
+}
+p{
+    margin: 0 0 16px 0;
+}
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input, textarea, button{
+    -webkit-appearance: none;
+    outline: none;
+    text-transform: uppercase;
+
+}
+input:focus, textarea:focus, select:focus{
+    box-shadow: none;
+}
+textarea{
+    outline: none;
+    resize: none;
+    overflow: auto;
+    height: 120px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 19px;
+    letter-spacing: 0.7px;
+}
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder{
+    color: #202a34;
+}
+input[type="text"], input[type="email"]{
+    vertical-align: top;
+    padding: 6px 19px 6px 19px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    font-size: 13px;
+    line-height: 20px;
+    height: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 0.7px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+input[type="submit"]{
+    padding: 5px 20px 7px 20px;
+    letter-spacing: 0.6px;
+}
+textarea, input, .photberry_form input,  textarea:focus {
+    color: #202a34;
+    background: #eeeeee;
+    font-family: "Oswald";
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 0;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+.photberry_form{
+    margin: 0;
+}
+.clear {
+     clear: both;
+}
+
+video{
+    height: 100vh !important;
+    top: 0 !important;
+   /* width: 110% !important;*/
+}
+ @media only screen and (min-width: 1200px) {
+     .photberry_container {
+         width: 1170px;
+    }
+}
+.photberry_header, .photberry_mobile_header_container, .photberry_mobile_menu_btn, .photberry_mobile_menu_btn:before, .photberry_useful_links li:before, .photberry_404_page .photberry_menu_icon span,
+.photberry_contact_2_center, .photberry_menu_btn{
+     background: #ffffff;
+}
+.photberry_dropcap_letter, .photberry_highlighter_bg1, .photberry_highlighter_bg2, footer .photberry_widget_title, footer .photberry_widget a,
+.photberry_popular_tags a:hover, .photberry_get_in_touch_block h1, .photberry_button, .photberry_button:hover, .photberry_grid_content h4, .photberry_subscribe_block h1,
+.photberry_subscribe_block input[type="submit"], .photberry_grid_item h6, .photberry_video_block h1, .photberry_button_video, .photberry_grid_content h6, .photberry_grid_content h3,
+input[type="submit"], .photberry_coming_soon a,  .photberry_coming_soon .photberry_copyright, .photberry_coming_soon .photberry_design_author, .photberry_cs_title,
+.countdown-section, .photberry_404_page a, .photberry_404_page .photberry_copyright, .photberry_404_page .photberry_design_author, .photberry_404_content, .photberry_404_content h1,
+.photberry_read_more_button:hover, .photberry_sharing a, .photberry_sharing a:hover, .photberry_slider_item_title, .photberry_slide_counter div{
+    color:  #ffffff;
+}
+.photberry_menu_cont a:hover, .photberry_menu_cont .active > a, .photberry_header_footer a:hover, .photberry_footer a:hover, .spincrement, a:hover, .photberry_tabs a:hover,
+.photberry_tabs .active a:hover, .photberry_portfolio_category a:hover, .button-group button:hover, .button-group button.is-checked{
+     color: #cc3333;
+}
+.photberry_menu_btn:hover .photberry_menu_icon span, .photberry_dropcap_letter, blockquote:before, .photberry_highlighter_bg1, .photberry_widget_title:before,
+.photberry_popular_tags a:hover, .photberry_counts_icon, .photberry_button, .photberry_image_link:before, .photberry_grid_item a:before,
+ .photberry_subscribe_block input[type="submit"], .photberry_center_slider_item a:before, input[type="submit"]:hover, .photberry_read_more_button:hover,
+ .photberry_button.photberry_load_more:hover, .photberry_portfolio_1col .photberry_load_more:hover{
+     background: #cc3333;
+}
+blockquote{
+    border-color: #cc3333;
+}
+.photberry_highlighter_bg2, .photberry_button:hover, .photberry_subscribe_block input[type="submit"]:hover, input[type="submit"], .photberry_read_more_button,
+ .photberry_load_more, .photberry_sharing a:hover {
+    background-color: #202a34;
+}
+.photberry_counts_title, .photberry_tabs a, .photberry_portfolio_category a, .button-group button{
+    color: #202a34;  
+}
+.photberry_sidebar .photberry_useful_links li:before{
+    background: #454e57;
+}
+.photberry_post_meta_item, .photberry_subscribe_block input, .photberry_read_more_button{
+    color: #202a34;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+}
+.photberry_grid_item a{
+    position: relative;
+}
+.photberry_image_link:before, .photberry_grid_item a:before, .photberry_center_slider_item a:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    transition: all 0.4s;
+    opacity: 0
+}
+.photberry_image_link:hover:before, .photberry_grid_item a:hover:before{
+    opacity: 0.7;
+}
+ .photberry_container {
+     margin: 0 auto;
+     padding: 0 ;
+}
+.photberry_site_wrapper{
+     padding-left: 270px;
+     position: relative;
+     overflow: hidden;
+     transition: left 500ms;
+     min-height: 100vh;
+}
+.photberry_main_wrapper {
+     transition: transform 0.5s;
+}
+.photberry_content{
+     background: #f7f7f7;
+     padding: 47px 0 60px 0;
+}
+.photberry_content > section:last-child{
+    padding-bottom: 0;
+}
+.photberry_right_sidebar .photberry_content{
+    padding-right: 60px;
+    width: 840px;
+ }
+
+/* Header */
+
+
+ .photberry_header{
+    width: 270px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 102;
+
+}
+ .photberry_header .photberry_menu{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.5s;
+ }
+ .photberry_header .photberry_sub_menu{
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+ }
+ .photberry_header .photberry_sub_menu.opened{
+    opacity: 1;
+    display: block;
+ }
+
+ .photberry_header .photberry_sub_menu.now_opened {
+    opacity: 1;
+    pointer-events: auto;
+}
+ .photberry_header .photberry_menu.opened > li.active_li > a,
+ .photberry_header .photberry_sub_menu.opened.now_opened > li.active_li > a,
+ .photberry_header .photberry_sub_menu,
+ .photberry_header .photberry_sub_menu > li,
+ .photberry_header .photberry_menu.opened > li,
+ .photberry_header .photberry_menu.opened.now_opened > li,
+ .photberry_header .photberry_sub_menu.opened.now_opened > li,
+ .photberry_header .photberry_sub_menu.opened > li{
+    pointer-events: none;
+    opacity: 0;  
+ }
+ .photberry_header .photberry_sub_menu.now_opened > li,
+ .photberry_header .photberry_sub_menu.opened.now_opened > li.active_li,
+ .photberry_header .photberry_menu.opened > li.active_li,
+ .photberry_header .photberry_sub_menu > li.active_li {
+    pointer-events: auto;
+    opacity: 1;
+ }
+ .photberry_image_logo{
+     width: 250px;
+     height: 100px;
+     display: block;
+     background: url(../img/ClassicIroncraftGreyLarge.png) 0 0 no-repeat transparent;
+     background-size: 250px 100px;
+     text-align: center;
+     margin: 0 auto;
+}
+
+.photberry_logo_cont{
+     padding: 40px 0 30px 0;
+     background-color: #333333;
+     margin-bottom: 30px;
+}
+.photberry_sub_menu{
+     display: none;
+     margin: 0;
+     transition: opacity 0.5s;
+}
+.photberry_menu_cont{
+     position: relative;
+     overflow: hidden;
+    z-index: 100;
+     text-align: center;    
+}
+.photberry_menu_cont li{
+     padding: 16px 15px 17px 15px;
+     list-style: none;
+}
+.photberry_menu_cont a{
+     font-size: 16px;
+     line-height: 19px;
+     text-transform: uppercase;
+     font-family: Oswald;
+     letter-spacing: 0.7px;
+     transition: opacity 0.5s, color 0.4s;
+}
+.menu-item-has-children > a:after{
+     content: '+';
+     display: inline-block;
+     margin-left: 5px;
+     font-size: 16px;
+     font-weight: 400;
+}
+.photberry_mobile_header .menu-item-has-children > .opened:after{
+    content: '-';
+}
+.photberry_header .menu-item-has-children > a.opened{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.photberry_menu_cont .photberry_li_back{
+     padding: 16px 0;
+}
+.photberry_li_back a:before{
+     font-family: FontAwesome;
+     content: '\f104';
+     margin-right: 10px;
+     font-size: 16px;
+     font-weight: 400;
+}
+
+.photberry_menu_cont:before, .photberry_menu_cont:after {
+    content: '';
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 300ms;
+    z-index: 101;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+.photberry_menu_cont:before {
+    top: 0;
+    background: -moz-linear-gradient(top, rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 25%, rgba(255,255,255, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 25%, rgba(255,255,255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 25%, rgba(255,255,255, 0) 100%);
+}
+.photberry_menu_cont:after {
+    background: -moz-linear-gradient(top, rgba(255,255,255, 0) 0%, rgba(255,255,255, 1) 75%, rgba(255,255,255, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255, 0) 0%, rgba(255,255,255, 1) 75%, rgba(255,255,255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(255,255,255, 1) 75%, rgba(255,255,255, 1) 100%);
+    bottom: 0;
+}
+.overflowed_top.photberry_menu_cont:before {
+    opacity: 1;
+}
+.overflowed_bottom.photberry_menu_cont:after {
+    opacity: 1;
+}
+.photberry_sub_menu.now_opened .photberry_sub_menu.now_opened{
+    top: 0 !important;
+}
+ .photberry_mobile_header {
+     display: none;
+     position: relative;
+     padding: 0;
+     width: 100%;
+     text-align: left;  
+}
+.photberry_mobile_menu_btn:before{
+     content: '';
+     position: absolute;
+     left: 0;
+     top: -5px;
+     height: 10px;
+     width: 100%;
+     z-index: 101;
+}
+.photberry_mobile_header_container{
+     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.photberry_show_header .photberry_header{
+     left: 0;
+}
+.photberry_show_header .photberry_menu_btn{
+     left: 270px;
+}
+.photberry_show_header .photberry_main_wrapper{
+   transform: translateX(270px);
+}
+.photberry_mobile_menu_btn,
+ .photberry_menu_btn {
+     display: none;
+     width: 40px;
+     height: 40px;
+     left: 0px;
+     top: 0;
+     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     transition: left 0.5s;
+     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+     overflow: hidden;
+     z-index: 100;
+}
+
+ .photberry_menu_icon span {
+     display: block;
+     width: 20px;
+     height: 2px;
+     position: absolute;
+     left: 0;
+     background: #202a34;
+     transition: background 0.4s, width 0.4s, transform 0.4s;
+}
+ .photberry_menu_line1 {
+     top: 3px;
+}
+ .photberry_menu_line2 {
+     top: 9px;
+}
+ .photberry_menu_line3 {
+     top: 15px;
+}
+.photberry_menu_icon{
+     position: absolute;
+     left: 10px;
+     top: 10px;
+     width: 20px;
+     height: 20px;
+}
+.photberry_show_mobile_header .photberry_menu_line1,
+ .photberry_show_header .photberry_menu_line1 {
+     transform: rotate(135deg) translate(5px,-6px);
+     transform-origin: 10px 0;
+}
+.photberry_show_mobile_header .photberry_menu_line2,
+ .photberry_show_header .photberry_menu_line2 {
+     opacity: 0;
+}
+.photberry_show_mobile_header .photberry_menu_line3,
+ .photberry_show_header .photberry_menu_line3 {
+     transform: rotate(-135deg) translate(4px,4px);
+}
+
+.photberry_header_footer{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     text-align: center;
+     letter-spacing: -0.19px;
+     padding: 34px 0;
+     font-size: 13px;
+     line-height: 21px;
+}
+
+.photberry_social{
+    padding-bottom: 19px; 
+    list-style: none;
+    margin: 0;
+}
+.photberry_social li{
+     display: inline-block;
+     list-style: none;
+     padding: 0;
+}
+.photberry_social a{
+     margin: 0 9px 0 9px;
+     font-size: 15px;
+     line-height: 20px;
+}
+
+/* Footer */
+
+
+.photberry_footer{
+    background: #202a34;
+    padding: 54px 0 0 0;
+    color: #79838e;
+} 
+.photberry_widget{
+    margin-bottom: 54px;
+}
+.photberry_widget li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.photberry_widget ul{
+    margin: 0;
+}
+footer .photberry_widget{
+    padding: 0 15px;
+    margin-bottom: 52px;
+}
+.photberry_footer_content{
+    margin: 0 -15px;
+}
+.photberry_widget p{
+    margin-bottom: 19px;
+}
+.photberry_widget_title{
+    padding-left: 20px;
+    margin-bottom: 24px;
+    position: relative;
+    text-align: left;
+}
+.photberry_widget_title:before{
+    content: '';
+    width: 10px;
+    height: 11px;
+    position: absolute;
+    left: 0;
+    top: 6px; 
+}
+.photberry_footer_contact .photberry_widget_title,
+.photberry_useful_links .photberry_widget_title{
+    margin-bottom: 19px; 
+}
+.photberry_footer_contact_block{
+    margin-bottom: 9px;
+    padding-right: 3px;
+}
+.photberry_footer_contact_block:last-child{
+    margin-bottom: 0;
+}
+.photberry_featured_posts img{
+    width: 62px;
+    display: block;
+}
+.photberry_featured_link{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+.photberry_widget .photberry_meta{
+    transform: translateY(-1px);
+}
+.photberry_featured_title_link{
+    transform: translateY(-2px);
+}
+.photberry_featured_link:before,
+.photberry_image_fader:before{
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;  
+    transition: all 0.4s;
+    background: #cc3333;
+    opacity: 0;
+}
+.photberry_featured_link:hover:before,
+.photberry_image_fader:hover:before{
+    opacity: 0.7;
+}
+.photberry_featured_posts .photberry_footer_contact_block{
+    margin-bottom: 31px;
+}
+.photberry_useful_links li{
+    padding: 0 0 10px 20px;
+}
+.photberry_useful_links li:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 3px;
+    height: 3px;
+    display: block;
+    transition: background 0.3s;
+}
+.photberry_flickr{
+    font-size: 0;
+    line-height: 0;
+}
+.photberry_image_fader{
+    position: relative;
+    
+}
+.photberry_image_fader img{
+   display: block;
+}
+.photberry_flickr li{
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: top;
+    position: relative;   
+}
+
+/* Sidebar */
+
+
+.photberry_sidebar{
+    padding: 34px 0 60px 30px;
+    width: 330px;
+    background: #ffffff; 
+}
+.photberry_sidebar_about img{
+    margin-bottom: 19px;
+}
+.photberry_sidebar_about p{
+    margin-bottom: 16px;
+}
+.photberry_search_form{
+    position: relative;
+    margin-bottom: 0;
+}
+.photberry_search_form input{
+    padding: 6px 45px 6px 19px;
+    color: #202a34;
+    background: #eeeeee;
+    font-family: "Oswald";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+.photberry_search_arrow{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #cfd4da;
+    font-size: 11px;
+    line-height: 13px;
+}
+.photberry_useful_links{
+    margin-bottom: 38px;
+}
+.photberry_banner{
+    margin-bottom: 48px;
+}
+.photberry_sidebar .photberry_featured_posts{
+    margin-bottom: 55px;
+}
+.photberry_popular_tags .photberry_widget_title {
+    margin-bottom: 14px;
+}
+.photberry_popular_tags ul{
+    font-size: 0;
+    padding-bottom: 6px;
+}
+.photberry_popular_tags li {
+    display: inline-block;
+
+}
+.photberry_popular_tags a{
+    font-family: "Oswald";
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #202a34;
+    vertical-align: top;
+    transition: background 0.4s;
+    text-transform: uppercase;
+    margin: 10px 10px 0 0;
+    line-height: 21px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 0.6px;
+}
+.photberry_sidebar .photberry_widget:last-child {
+    margin-bottom: 0;
+}
+.photberry_search_form_widget input{
+    margin-bottom: 10px;
+}
+
+/* Slider */
+
+.photberry_fullwidth_slider{
+    overflow: hidden;
+    height: 750px;
+}
+.photberry_fullwidth_slider .owl-dots{
+    display: none;
+}
+.photberry_slider_item{
+    position: relative;
+    overflow: hidden;
+    height: 750px;
+}
+.photberry_slider_item img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.photberry_testimonials_slider .owl-next,
+.photberry_testimonials_slider .owl-prev,
+.photberry_fullwidth_slider .owl-prev,
+.photberry_fullwidth_slider .owl-next{
+    position: absolute;
+    top: 50%;
+    margin-top: -26px;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s;
+}
+.photberry_testimonials_slider .owl-next,
+.photberry_fullwidth_slider .owl-next{
+    right: 45px;
+    transform: rotate(-45deg);
+}
+.photberry_testimonials_slider .owl-prev,
+.photberry_fullwidth_slider .owl-prev{
+    left: 45px;
+    transform: rotate(45deg);
+}
+.sb_down:after, .sb_down:before, .sb_up:after, .sb_up:before,
+.photberry_fullwidth_slider .owl-prev:after,
+.photberry_fullwidth_slider .owl-prev:before,
+.photberry_fullwidth_slider .owl-next:after,
+.photberry_fullwidth_slider .owl-next:before{
+    content: '';
+    position: absolute;
+    transition: background 0.4s;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+} 
+.photberry_fullwidth_slider .owl-prev:hover:after,
+.photberry_fullwidth_slider .owl-prev:hover:before,
+.photberry_fullwidth_slider .owl-next:hover:after,
+.photberry_fullwidth_slider .owl-next:hover:before{
+    background: #cc3333;
+}
+.sb_up:after,
+.photberry_testimonials_slider .owl-next:before,   
+.photberry_fullwidth_slider .owl-next:before{
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 20px;
+}
+.sb_up:before,
+.photberry_testimonials_slider .owl-next:after,
+.photberry_fullwidth_slider .owl-next:after{
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+}
+.sb_down:before{
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;  
+}
+.photberry_testimonials_slider .owl-prev:after,
+.photberry_fullwidth_slider .owl-prev:after{
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+}
+.sb_down:after,
+.photberry_testimonials_slider .owl-prev:before,
+.photberry_fullwidth_slider .owl-prev:before{
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 20px;
+}
+
+/* Slider with thumbs*/
+
+.photberry_thumbs_slider .owl-next,
+.photberry_thumbs_slider .owl-prev{
+    right: 40px;
+    left: auto;
+}
+.photberry_thumbs_slider .owl-next{
+    transform: rotate(45deg);
+    margin-top: 30px;
+}
+.photberry_thumbs_slider .owl-prev{
+    transform: rotate(135deg);
+    margin-top: -46px;
+}
+/* Testimonials Slider */
+.photberry_testimonials_slider .photberry_testimonials_item img{
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    max-width: none;
+    border-radius: 50%;
+    margin-bottom: 55px;
+}
+.photberry_testimonials_slider .owl-dots{
+    display: none;
+}
+.photberry_testimonials_content p{
+    padding: 0 200px 27px 200px;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+.photberry_testimonial_author{
+    margin: 0 0 2px 0;
+}
+.photberry_person_position,
+.photberry_testimonial_additional{
+    text-align: center;
+    font-size: 12px;
+    color: #79838e;
+    font-style: italic;
+}
+.photberry_testimonials_slider .owl-prev:after,
+.photberry_testimonials_slider .owl-prev:before,
+.photberry_testimonials_slider .owl-next:after,
+.photberry_testimonials_slider .owl-next:before{
+    content: '';
+    position: absolute;
+    transition: background 0.4s;
+    background: #454e57;
+} 
+
+/* Testimonials Slider1 */
+
+.photberry_testimonials1 h2{
+    margin-bottom: 33px;
+}
+.photberry_container .photberry_testimonials_item1 img{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+.photberry_testimonials_item1{
+    padding: 0 15px;
+}
+.photberry_testimonials_item1 p{
+    padding: 35px 40px 34px 40px;
+    background: #eeeeee;
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 28px;
+}
+.photberry_testimonials_item1 .photberry_testimonial_additional,
+.photberry_testimonials_item1 .photberry_testimonial_author{
+    text-align: left;
+}
+.photberry_testimonials_item1 .photberry_testimonial_author{
+    padding: 6px 0 0px 0;
+}
+.photberry_testimonials_slider1 .owl-nav{
+    display: none;
+}
+.owl-dot span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #c7c8ca;
+    border: none;
+    border-radius: 100%;
+    transition: all 0.3s;
+}
+.owl-dot{
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+    margin: 0 9px;
+    border: none;
+    transition: all 0.3s;
+    border-radius: 100%;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.owl-dot span:hover,
+.owl-dot.active span,
+.owl-dot.active{
+    background: #9c9ea0;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 37px;
+}
+
+/* Photberry Center Slider */
+
+.photberry_center_slider .owl-nav,
+.photberry_center_slider .owl-dots{
+    display: none;
+}
+.photberry_center_slider_item a{
+    position: relative;
+}
+.photberry_center_slider_item a:hover:before{
+    opacity: 0.7;
+}
+.photberry_center_slider_item a:hover .photberry_grid_content{
+    opacity: 1;   
+}
+
+/* Typography */
+
+
+.photberry_headings{
+    padding-bottom: 65px;
+}
+.photberry_headings_title{
+    margin-bottom: 34px;
+    line-height: 1;
+}
+.photberry_dropcap_letter{
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 5px 5px 6px 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 5px 20px 0 0;
+}
+blockquote{
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 30px;
+    color: #454e57;
+    border: none;
+    position: relative;
+    letter-spacing: -0.04px;
+}
+blockquote:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 10px;
+    height: calc(100% - 6px);
+}
+.photberry_blockquote{
+    padding-bottom: 80px;
+}
+
+/* About-1 */
+
+
+.photberry_about1 section{
+    padding-bottom: 60px;
+}
+section.photberry_title_w_text{
+    text-align: center;
+    padding: 3px 0 54px 0;
+}
+.photberry_title_w_text h2{
+    margin-bottom: 28px;
+}
+.photberry_title_w_text p{
+    margin: 0;
+}
+.photberry_counts{
+    margin: 0 -15px;
+    padding: 0;
+}
+.photberry_counts_item{
+    padding: 0 15px;
+    position: relative;
+    text-align: left;
+    font-size: 0;
+}
+.photberry_counts_section{
+    padding-bottom: 45px;
+}
+.photberry_counts_cont{
+    padding: 9px 0 8px 9px;
+    display: inline-block;
+}
+.photberry_counts_block{
+    width: 33.33%;
+    padding: 0 20px 0 0;
+    display: inline-block;
+    float: left;
+}
+.photberry_counts_icon{  
+    height: 70px;
+    text-align: center;  
+    width: 100%;
+}
+.photberry_counts_icon img{
+     transform: translateY(-50%);
+     position: relative;
+     top: 50%;
+}
+.spincrement{
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Oswald";
+    font-weight: 400;
+    text-align: left; 
+}
+.photberry_counts_title{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+    font-family: "Oswald";
+    font-weight: 400;
+    margin-top: 4px;
+}
+.photberry_fullwidth_slider_section{
+    padding-bottom: 60px;
+}
+section.photberry_link_block{
+    padding-bottom: 52px;
+}
+.photberry_link_item{
+    padding: 0 15px;
+}
+.photberry_link_block .row{
+    margin: 0 -15px;
+}
+.photberry_link_item img{
+    display: block;
+    margin-bottom: 24px;
+}
+.photberry_link_item h5{
+    margin-bottom: 19px;
+}
+.photberry_link_item p{
+    margin-bottom: 28px;
+    text-align: center;
+}
+.photberry_link_item h6{
+    margin-bottom: 0;
+}
+.photberry_link_item_href i{
+    font-size: 11px;
+    transform: translateY(-2px);
+    margin-left: 10px;
+}
+
+.photberry_subscribe_block,
+.photberry_get_in_touch_block{
+    background-color: #cc3333;
+    text-align: left;
+}
+.photberry_get_in_touch_block h1{
+   display: inline-block;
+   padding: 63px 0 54px 57px;
+   color: #ffffff;
+}
+.photberry_get_in_touch_block a{
+    float: right;
+    margin: 75px 60px 60px 0;
+}
+.photberry_button{
+    padding: 15px 19px 19px 20px;
+    font-family: "Oswald";
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border-radius: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    background-color: #ffffff;
+    color: #cc3333;
+}
+section.photberry_partners{
+    padding-bottom: 49px;
+}
+.photberry_partners .row{
+    margin: 0 -15px;
+}
+.photberry_partners_item{
+    padding: 0 15px;
+    transition: all 0.3s;
+}
+.photberry_partners_item:hover{
+    transform: rotate(4deg);
+}
+.photberry_blog_grid{
+    text-align: center;
+}
+.photberry_blog_grid h2{
+    margin-bottom: 33px;
+}
+.photberry_blog_posts{
+    margin: 0 -15px;
+}
+.photberry_posts_item{
+    padding: 0 15px;
+    text-align: left;
+    padding-bottom: 55px;
+}
+.photberry_post_title{
+    text-align: left;
+    margin-bottom: 18px;
+}
+.photberry_posts_item img{
+    display: block;
+}
+.photberry_image_link{
+    position: relative;
+}
+.photberry_excerpt{
+    margin: 0;
+}
+.photberry_post_meta{
+    font-size: 0;
+    line-height: 0;
+    margin: 11px 0 6px 0;
+}
+.photberry_post_meta_item{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 22px;
+    letter-spacing: 0.5px;
+}
+.photberry_grid_item{
+    width: 25%;
+    border: 5px solid transparent;
+    display: block;
+   float: left;
+}
+.photberry_grid_item a,
+.photberry_grid_item img{
+   display: block;
+   font-size: 0;
+   line-height: 0;
+}
+.photberry_grid_item1{
+    width: 50%;
+}
+.photberry_grid{
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+.photberry_grid_item1_1{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+.photberry_grid_item1_1 img{
+    position: relative;
+    
+    z-index: 1;
+}
+.photberry_grid_item1_1 a:before{
+    content: '';
+    z-index: 10;
+}
+.photberry_grid_item1_1 a{
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 5;
+}
+.photberry_grid_content{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 11;
+    padding: 0 20px;
+}
+.photberry_grid_content{
+    margin-bottom: 0;
+}
+.photberry_grid_item a:hover .photberry_grid_content{
+    opacity: 1;
+}
+section.photberry_gallery_section{
+    padding: 0 5px 45px 5px;
+}
+
+section.photberry_gallery_section .homepage_grid h6 {
+    text-transform: uppercase;
+}
+
+.photberry_testimonials h2{
+    margin-bottom: 33px;
+}
+section.photberry_get_in_touch{
+    padding-bottom: 50px;
+}
+section.photberry_testimonials{
+    padding-bottom: 0;
+    margin-bottom: 60px;
+}
+.photberry_testimonials .photberry_container{
+    border-bottom: 1px solid  #e1e2e3;
+    padding-bottom: 53px;
+}
+
+/* About-2 */
+
+.photberry_about2_1{
+    padding-bottom: 44px;
+}
+.photberry_about2_1 .photberry_img_block{
+    padding-right: 20px;
+}
+.photberry_about2_1 .photberry_title_w_text{
+    padding-left: 10px;
+}
+.photberry_about2_1 h2{
+    text-align: left;
+}
+.photberry_about2_1 p{
+    margin-bottom: 20px;
+}
+.photberry_production{
+    margin: 0 -15px;
+}
+.photberry_production_item{
+    padding: 15px;
+}
+.photberry_production_item h5{
+    font-size: 15px;
+    text-align: left;
+    margin: 16px 0 9px 0;
+}
+.photberry_production_item p{
+    margin-bottom: 4px;
+}
+.photberry_grid1 .photberry_grid_item{
+    border: none;
+}
+.photberry_about2 .photberry_get_in_touch{
+    padding: 0;
+}
+section.photberry_gallery_section1{
+    padding: 0 0 51px 0;
+}
+section.photberry_about2_2{
+    padding-bottom: 33px;
+}
+.photberry_about2_2 h3{
+    margin-bottom: 18px;
+}
+.photberry_about2_2 p{
+    text-align: center;
+    padding: 0 35px;
+}
+.photberry_table h6{
+    text-align: left;
+    margin-bottom: 14px;
+}
+.photberry_table th{
+    padding: 32px 0 0 0;
+}
+.photberry_table td,
+.photberry_table th{
+    border-bottom: 1px solid #e1e2e3;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+.photberry_table td{
+    padding: 35px 0 34px 0;
+    font-size: 14px;
+    line-height: 21px;
+}
+.photberry_table th:nth-child(1){
+    width: 52%;
+}
+.photberry_table th:nth-child(2){
+    width: 25%;
+}
+.photberry_price{
+    margin: 0 -15px;
+}
+.photberry_price_wraper{
+    padding: 0 15px;
+}
+.photberry_price_item{
+    background: #eeeeee;
+    text-align: center;
+    padding: 60px 30px 60px 30px;
+}
+.photberry_price_item img{
+    width: 48%;
+    margin: 0 auto 28px auto;
+    border-radius: 50%;
+}
+.photberry_about2_3 h2{
+    margin-bottom: 32px;
+}
+.photberry_price_item h2{
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 28px;
+}
+.photberry_price_item a{
+    padding: 18px 20px 19px 20px;
+    margin-top: 24px;
+}
+.photberry_price_item p{
+   margin-bottom: 10px;
+}
+.photberry_price_item_title{
+    margin-bottom: 11px;
+}
+.photberry_hidden {
+    opacity: 0;
+}
+.photberry_visible {
+    opacity: 1;
+}
+
+/* About-3 */
+
+.photberry_about3 .photberry_img_block{
+    margin-bottom: 39px;
+}
+.photberry_production_section{
+    padding-bottom: 35px;
+}
+.photberry_subscribe_block{
+    padding: 47px 20px 50px 20px;
+}
+.photberry_subscribe_section{
+    padding-bottom: 50px;
+}
+.photberry_subscribe_block h1{
+    margin-bottom: 33px;
+}
+.photberry_subscribe_block form{
+    margin: 0 auto;
+    max-width: 770px;
+    line-height: 0;
+    font-size: 0;
+    text-align: center;
+}
+.photberry_subscribe_block input{
+    line-height: 28px;
+    text-transform: uppercase;
+    height: 50px;
+}
+.photberry_subscribe_block input[type="text"],
+.photberry_subscribe_block input[type="email"]{
+    background: #ffffff;
+    width: calc(100% - 105px);
+    padding-top: 11px;
+    padding-bottom: 11px;
+    display: inline-block;
+}
+form input{
+    border-radius: 0;
+    border: none;
+    display: inline-block;
+}
+.photberry_subscribe_block input[type="submit"]{
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding: 5px 20px 7px 20px;
+    letter-spacing: 0.6px;
+    transition: all 0.4s;
+}
+.photberry_subscribe_block input[type="submit"]:hover{
+    cursor: pointer;
+}
+.photberry_testimonials1{
+    padding-bottom: 34px;
+}
+.photberry_testimonials1 h5{
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+.photberry_grid_item h4{
+    margin: 0;
+}
+.photberry_grid_item h6{
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+.photberry_gallery_section2 .photberry_grid_item {
+    border: 5px solid transparent;
+}
+.photberry_about3 .photberry_gallery_section2{
+    text-align: center;
+    padding-bottom: 0;
+}
+.photberry_gallery_section2 h3{
+    margin-bottom: 28px;
+}
+.photberry_gallery_section2 .photberry_button{
+    margin-top: 55px;
+}
+.photberry_about3 .photberry_partners{
+    padding-bottom: 46px;
+}
+
+/* About-4 */
+
+
+.photberry_about4 .photberry_content{
+    padding-top: 0;
+}
+.photberry_about_video{
+    padding-bottom: 52px;
+}
+
+.photberry_center_block{
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.photberry_button_video{
+    border: 3px solid #ffffff;
+    background-color: rgba(255,255,255,0);
+    padding: 15px 19px 19px 20px;
+    margin-top: 34px;
+}
+.photberry_button_video:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+.photberry_button_video i{
+    margin-right: 15px;
+}
+.photberry_about4_1{
+    padding-bottom: 35px;
+}
+.photberry_about4_1 h4{
+    text-align: left;
+    margin-bottom: 18px;
+}
+.photberry_about4_1 .photberry_production{
+    padding-top: 3px;
+}
+.photberry_about4 .photberry_gallery_section{
+    padding: 0;
+}
+.photberry_no_border .photberry_grid_item{
+    border: none;
+}
+.photberry_get_in_touch1 h1{
+    padding-left: 0;
+}
+.photberry_get_in_touch1 a{
+    margin-right: 0;
+}
+.photberry_team{
+    padding-bottom: 28px;
+}
+.photberry_team h4{
+    text-align: left;
+    margin: 2px 0 18px 0 ;
+}
+.photberry_team_item{
+    padding:  0 15px;
+    text-align: center;
+}
+.photberry_team .row{
+    margin: 34px -15px 0 -15px;
+}
+.photberry_person_title{
+    margin: 18px 0 9px 0;
+}
+.photberry_team_item p{
+    margin: 8px 0 22px 0;
+}
+.photberry_team a{
+    margin: 0 8px 0 8px;
+}
+.photberry_offices h4{
+    text-align: left;
+    margin-bottom: 18px;
+}
+.photberry_offices p{
+    margin-bottom: 20px;
+}
+.photberry_offices_item{
+    padding: 15px 15px 0 15px;
+    text-align: center;
+}
+.photberry_offices_item h5{
+    margin: 18px 0 19px 0;
+}
+.photberry_offices_item a{
+    line-height: 21px;
+    padding: 14px 20px 15px 20px;
+    margin-top: 14px;
+}
+.photberry_offices .row{
+    margin: 0 -15px;
+}
+
+/* Book a Session */
+
+
+.photberry_title_page{
+    margin-bottom: 53px;
+}
+.photberry_book .photberry_get_in_touch{
+    padding: 0;
+}
+.photberry_tabs{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.photberry_tabs ul{
+    display: block;
+}
+.photberry_tabs li{
+    list-style: none;
+    display: inline-block;
+}
+.photberry_tabs a{
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.9px;
+    font-family: "Oswald";
+    font-weight: 400;
+    border: transparent;
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 16px;
+}
+.photberry_tabs li{
+    margin:  0 27px;
+    padding: 0;
+}
+.photberry_tabs p{
+    margin-bottom: 0;
+    padding: 35px 15px 16px 15px;
+}
+.photberry_tabs a:hover{
+    background: transparent;
+    text-decoration: none;
+}
+.photberry_tabs li a.current{
+    border-bottom: 1px solid #cc3333;
+}
+.photberry_center_slider_section{
+    padding-bottom: 49px;
+}
+.photberry_form_section h5{
+    text-align: left;
+    margin-bottom: 24px;
+}
+.photberry_book .photberry_about2_3{
+    padding-bottom: 54px;
+}
+.photberry_tabs_container {
+    min-height: 180px;
+}
+.photberry_hide{
+    display: none;
+}
+.tabs{
+    margin-bottom: 0;
+}
+
+/* Choose Your Package */
+
+.photberry_about2_3 .photberry_img_block{
+    padding: 0 15px;
+}
+.photberry_choose .photberry_about2_3{
+    padding-bottom: 30px;
+}
+.photberry_choose .photberry_form_section{
+    padding-top: 28px;
+}
+.photberry_price .photberry_img_block{
+    height: 100%;
+    position:  relative;
+}
+.photberry_price .photberry_img_block img{
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  display: block;
+}
+
+/* Testimonials */
+
+.photberry_grid_item2{
+    width: 33.3%;
+}
+.photberry_section_wrapper{
+    margin: 0 -15px;
+}
+.photberry_testimonials_page h2{
+    margin: 3px 0 53px 0;
+}
+.photberry_testimonials_section .photberry_testimonials_item1{
+    margin-bottom: 60px;
+}
+.photberry_testimonials_section{
+    padding-bottom: 0px;
+}
+.photberry_testimonials_page .photberry_get_in_touch{
+    padding-bottom: 55px;
+}
+
+/* Coming Soon */
+
+
+.photberry_coming_soon:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+    position: absolute;
+    background: rgba(0,0,0,0.1);
+}
+.photberry_coming_soon form{
+    max-width: 520px;
+    padding-bottom: 7px;
+}
+.photberry_coming_soon .photberry_logo_cont{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.photberry_content_cs .photberry_subscribe_block{
+    background: transparent;
+    padding: 93px 0 0 0;
+}
+.photberry_404_content,
+.photberry_content_cs{
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.photberry_cs_footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 34px;
+}
+.photberry_cs_title{
+    margin-bottom: 71px;
+}
+.photberry_countdown{
+    text-align: center;
+}
+.countdown-section{
+    text-align: center;
+    display: inline-block;
+    width: 25%;
+    font-family: "Oswald";
+    letter-spacing: 0.7px;
+    font-weight: 400;
+}
+.countdown-section:last-child{
+    margin-right: 0;
+}
+.countdown-amount{
+    font-size: 120px;   
+    line-height: 130px;
+   
+}
+.countdown-period{
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    text-transform: uppercase;
+    padding-top: 26px;
+}
+
+/* 404 */
+
+.photberry_404_page{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/bg/bg-canvas-img2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.photberry_404_page .photberry_mobile_header_container{
+    background: transparent;
+}
+.photberry_404_page:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+}
+.photberry_404_page .photberry_header{
+    background: transparent;
+    width: 269px;
+    border-right: 1px solid #ffffff;
+}
+.photberry_404_page .photberry_mobile_menu_btn,
+.photberry_404_page .photberry_menu_btn{
+    border: 1px solid rgba(255,255,255, 0.4);
+    border-left: 0;
+}
+.photberry_404_page .photberry_menu_btn,
+.photberry_404_page .photberry_mobile_menu_btn{
+    background: transparent;
+}
+.photberry_404_page .photberry_mobile_menu_btn:before{
+    display: none;
+}
+.photberry_404{
+    height: 100%;
+    position: relative;
+}
+.photberry_404_content{
+    max-width: 560px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.photberry_404_content .photberry_subscribe_block{
+    background: transparent;
+    padding: 0 0 0 0;
+}
+.photberry_404_content input[type="submit"]{
+    padding: 5px 19px 7px 19px;
+}
+.photberry_404_content form{
+    max-width: 545px;
+    padding-top: 18px;
+}
+.photberry_404_content h1{
+    margin-bottom: 28px;
+}
+.photberry_404_content input[type="text"]{
+    margin-bottom: 0;
+}
+
+/* Contact 01 */
+
+.canvas_map_container{
+    height: 430px;
+}
+.photberry_contact_1 .photberry_content{
+    padding-top: 36px;
+}
+.photberry_contact_1 h1{
+    text-align: left;
+    margin-left: -3px;
+    margin-bottom: 53px;
+}
+.photberry_contact_1_1{
+    padding-bottom: 54px;
+}
+.photberry_contact_1_1 .row{
+    margin: 0 -15px;
+}
+.photberry_contact_1_1_item{
+    padding: 0 15px;
+    text-align: left;
+}
+.photberry_contact_1_1_item h5{
+    text-align: left;
+    padding-top: 4px;
+    margin-bottom: 19px;
+}
+.photberry_contact_1_1_item p{
+    margin-bottom: 9px;
+}
+.photberry_contact_1_1_item p + h5{
+    margin-top: 44px;
+}
+p.photberry_contact_1_1_text{
+    padding-top: 1px;
+    margin-bottom: 54px;
+}
+.photberry_maps_section{
+    padding-bottom: 54px;
+}
+
+/* Contact 02 */
+
+.photberry_contact_2_wraper{
+    height: 100vh;
+    position: relative;
+}
+.photberry_contact_2_center{
+    max-width: 970px;
+    margin: 0 auto;
+    position: relative;
+    padding: 47px 60px 38px 60px;
+    text-align: left;
+}
+.photberry_contact_2_center h1{
+    text-align: left;
+    margin-left: -3px;
+    margin-bottom: 28px;
+}
+.photberry_contact_2_center p + h5{
+    text-align: left;
+    margin: 28px 0 19px 0;
+}
+.photberry_contact_2_center hr{
+    border-bottom: 1px solid #e8e9ea;
+    margin-top: 55px;
+    margin-bottom: 54px;
+}
+.photberry_follow_block ul{
+    display: inline-block;
+    padding: 0;
+    margin-right: -8px;
+    margin-left: 4px;
+}
+.photberry_email_block p{
+    text-align: center;
+}
+.photberry_follow_block p{
+    display: inline-block;
+}
+.photberry_follow_block{
+    text-align: right;
+}
+.photberry_follow_block .photberry_social a{
+    margin: 0 8px 0 9px;
+}
+
+/* Contact 03 */
+
+.photberry_title_w_text h1{
+    text-align: left;
+    line-height: 55px;
+    margin-bottom: 30px;
+}
+.photberry_contact_block h5{
+    text-align: left;
+    margin-top: 48px;
+    margin-bottom: 19px;
+}
+.photberry_contact_block .photberry_follow_block{
+    text-align: left;
+}
+.photberry_contact_block hr{
+    margin: 55px 0 55px 0;
+}
+.photberry_contact_block{
+    padding-bottom: 10px;
+}
+.photberry_contact_3 .photberry_form_section{
+    padding-bottom: 0;
+}
+
+/* Blog Fullwidth */
+
+.photberry_blog_title{
+    margin-bottom: 53px;
+}
+.photberry_post_cont{
+    margin-bottom: 24px;
+}
+.photberry_stand_post_title{
+    letter-spacing: 0.1px;
+    text-align: left;
+    line-height: 46px;
+    margin-left: -1px;
+    margin-bottom: 20px;
+}
+.photberry_read_more_button{
+    padding: 4px 20px 4px 19px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 8px;
+}
+.photberry_post_video_cont iframe{
+    width: 100%;
+    display: block;
+    height: 440px;
+}
+.photberry_standard_post_item{
+    padding-bottom: 60px;
+}
+.photberry_post_gallery_cont{
+    margin: -5px -5px 19px -5px;
+}
+.photberry_image_post .photberry_fullwidth_slider,
+.photberry_image_post .photberry_slider_item,
+.photberry_post_image_cont .photberry_slider_item,
+.photberry_post_image_cont .photberry_fullwidth_slider{
+    height: 658px;
+}
+.photberry_pagination{
+    border-top: 1px solid #e1e2e3;
+    padding-top: 55px;
+    text-align: center;
+    font-family: "Oswald";
+    padding-bottom: 1px;
+}
+.photberry_pagination a{
+    margin-right: 6px;
+}
+.photberry_post_nav i,
+.photberry_pagination i{
+    font-size: 11px;
+    transform: translateY(-2px);
+}
+.photberry_nav_link_left,
+.photberry_nav_link_right,
+.photberry_pagination_link_left,
+.photberry_pagination_link_right{
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    color: #454e57;
+}
+.photberry_pagination_link_left{
+    float: left;
+}
+.photberry_pagination_link_left i{
+    margin-right: 19px;
+}
+a.photberry_pagination_link_right{
+    float: right;
+    margin-right: 0;
+}
+.photberry_pagination_link_right i{
+    margin-left: 19px;
+}
+
+/* Blog with Right Sidebar */
+
+.photberry_blog_right_sidebar .photberry_slider_item,
+.photberry_blog_right_sidebar .photberry_fullwidth_slider{
+    height: 438px;
+}
+
+/* Blog with Left Sidebar */
+
+.photberry_left_sidebar .photberry_content{
+    width: 840px;
+}
+.photberry_left_sidebar{
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #f7f7f7 51%, #f7f7f7 100%);
+}
+.photberry_left_sidebar .photberry_sidebar{
+    padding: 34px 30px 60px 0;
+}
+.photberry_left_sidebar .photberry_content{
+    padding-left: 60px;
+}
+
+/* Blog Grid */
+
+.photberry_blog_grid{
+    padding-bottom: 0px;
+}
+.photberry_blog_grid .photberry_button{
+   margin-bottom: 30px;
+   margin-top: -2px; 
+}
+.photberry_load_more{
+    padding-top: 18px;   
+    padding-left: 21px;   
+}
+.photberry_blog_grid .photberry_post_meta{
+    margin-top: 18px;
+}
+.photberry_blog_grid .photberry_post_title{
+    letter-spacing: -0.1px;
+}
+.photberry_blog_posts .photberry_grid_item{
+    width: 33.3333%;
+}
+.photberry_blog_posts .photberry_grid_item a{
+    font-size: inherit;
+    line-height: inherit;
+    display: inline-block;
+}
+.photberry_blog_posts .photberry_post_title{
+    margin-bottom: 18px;
+}
+.photberry_post_title a:before,
+.photberry_post_meta a:before{
+    display: none;
+}
+
+/* Standard Post */
+
+.photberry_standard_post .photberry_post_meta{
+    margin: 7px 0 8px 0;
+}
+.photberry_standard_post .photberry_stand_post_title{
+   margin-bottom: 40px;
+   letter-spacing: 0;
+   margin-left: 0; 
+}
+.photberry_standard_post .photberry_dropcap_letter{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    padding-top: 10px;
+} 
+.photberry_post_standard_cont img{
+    display: block;
+}
+.photberry_post_standard_cont{
+    margin-bottom: 35px;
+}
+ .photberry_sharing, .photberry_post_tags {
+    color: #202a34;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+.photberry_post_tags{
+    margin: 48px 0 54px 0;
+}
+.photberry_sharing{
+     margin-top: 39px;
+     margin-bottom: 60px;
+}
+ .photberry_sharing a{
+     display: inline-block;
+     text-decoration: none;
+     padding: 4px 10px 4px 10px;
+     margin-right: 7px;
+}
+ .photberry_share_facebook{
+     background: #3b5998;
+}
+ .photberry_share_twitter{
+     background: #55acee;
+}
+ .photberry_share_google_plus{
+     background: #dc4e41;
+}
+ .photberry_share_pinterest{
+     background: #bd081c;
+}
+ .photberry_sharing span{
+     margin-right: 27px;
+}
+.photberry_post_nav{
+    border-top: #e1e2e3 1px solid;
+    padding: 55px 0 56px 0;
+    border-bottom: #e1e2e3 1px solid;
+    margin-bottom: 54px;
+    font-family: "Oswald";
+    width: 100%;
+}
+.photberry_post_nav_next,
+.photberry_post_nav_prev{
+    width: 50%;
+    display: inline-block;
+}
+.photberry_post_nav_next{
+    float: right;
+    text-align: right;
+}
+.photberry_nav_link_left,
+.photberry_nav_link_right,
+.photberry_post_prev_title,
+.photberry_post_next_title{
+    display: block;
+}
+.photberry_post_prev_title,
+.photberry_post_next_title{
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-top: 8px;
+}
+.photberry_nav_link_left,
+.photberry_nav_link_right{
+    letter-spacing: 0.6px;
+}
+.photberry_nav_link_right i{
+    margin-left: 20px;
+}
+.photberry_nav_link_left i{
+    margin-right: 20px;
+}
+.photberry_section_w_text{
+    padding-bottom: 54px;
+}
+.photberry_section_w_text h5{
+   margin-bottom: 19px;
+}
+.photberry_posts_featured_item{
+    padding-bottom: 0;
+}
+.photberry_posts_featured_item .photberry_post_meta{
+    margin: 18px 0 6px 0;
+}
+.photberry_posts_featured_item .photberry_post_title{
+    letter-spacing: 0;
+}
+.photberry_posts_featured_title{
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+/* Image Post */
+
+.photberry_grid_section3{
+    margin: 30px -5px 20px -5px;
+} 
+.photberry_grid_section3 .photberry_grid_item{
+    width: 33.333%;
+    padding: 5px;
+}
+
+/* Gallery Post */
+
+.photberry_gallery_post .photberry_post_gallery_cont{
+    margin-bottom: 35px;
+}
+.photberry_gallery_post .photberry_get_in_touch{
+    margin: 42px 0 40px 0;
+    padding: 0;
+}
+
+/* Video Post */
+
+.photberry_video_post .photberry_post_video_cont{
+    margin-bottom: 35px;
+}
+
+/* Audio Post */
+
+.photberry_post_audio_cont {
+    margin-bottom: 29px;
+}
+.photberry_post_audio_cont iframe{
+    height: 400px;
+    width: 100%;
+}
+
+/* Portfolio Grid */
+
+.photberry_portfolio_grid .photberry_content{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.photberry_portfolio_grid .photberry_section_w_margin {
+    padding: 47px 0 60px 0;
+}
+
+.photberry_portfolio_grid section{
+    padding: 0;
+}
+.photberry_portfolio_grid .photberry_button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Portfolio Grid with Margins */
+
+section.photberry_gallery_section3{
+    padding: 5px;
+}
+.photberry_gallery_section3 .photberry_grid_item{
+    padding: 5px;
+}
+
+/* Portfolio Masonry */
+
+.photberry_gallery_section_masonry .photberry_grid_item{
+    width: 25%;
+    border: none;
+}
+
+/* Portfolio Packery */
+
+.photberry_portfolio_packery .photberry_grid_item{
+    border: 0;
+}
+.photberry_grid_item1_2{
+    width: 50%;  
+    overflow: hidden;
+    position: relative;
+}
+.photberry_grid_item1_2 a{
+    top: -50%;
+}
+
+/* Portfolio Packery with Margins */
+
+.photberry_portfolio_packery_margin .photberry_gallery_section{
+    padding: 5px; 
+}
+
+/* Portfolio 1 Column */
+
+.photberry_portfolio_1col_item{
+    width: 100%;
+    margin-top: 61px;
+}
+.photberry_portfolio_1col_item:first-child{
+   margin-top: 51px;
+}
+.photberry_portfolio_1col{
+    padding-bottom: 0;
+    text-align: center;
+}
+.photberry_portfolio_1col_item a{
+    font-size: inherit;
+    line-height: inherit;
+}
+.photberry_portfolio_1col_item a:before{
+    display: none;
+}
+.photberry_portfolio_1col_item .photberry_img_block{
+    padding-right: 15px;
+}
+.photberry_portfolio_cont h6,
+.photberry_portfolio_cont h2{
+    text-align: left;
+}
+.photberry_portfolio_cont h6{
+    letter-spacing: 0.7px;
+    margin-bottom: 4px;
+}
+.photberry_portfolio_cont h2{
+    margin-bottom: 18px;
+}
+.photberry_portfolio_cont{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 12px;
+}
+.photberry_portfolio_cont .photberry_read_more_button{
+    line-height: 23px;
+    display: inline-block;
+    font-size: 13px;
+}
+.photberry_portfolio_1col .photberry_load_more{
+    margin: 59px 0 30px 0;
+}
+.button-group button{
+    background: transparent;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    font-family: "Oswald";
+    font-weight: 400;
+    transition: all 0.3s;
+    border: none;
+    padding: 0 13px;
+    min-height: 1px;
+}
+.button-group{
+    padding-top: 5px;
+}
+
+/* Portfolio 2 Column */
+
+.photberry_2col{
+    width: 50%;
+}
+.photberry_3col a,
+.photberry_2col a{
+    font-size: inherit;
+    line-height: inherit;
+}
+.photberry_portfolio_grid_item{
+    padding: 5px;
+}
+.photberry_portfolio_2col{
+    padding: 0 5px;
+    text-align: center;
+}
+.photberry_portfolio_2col .button-group{
+    margin-bottom: 46px;
+}
+.photberry_portfolio_grid_item .photberry_portfolio_cont{
+    padding: 24px 0 19px 0;
+}
+.photberry_portfolio_cont a:before{
+    display: none;
+}
+.photberry_portfolio_2col .photberry_load_more{
+    margin: 35px 0 30px 0;
+}
+
+/* Portfolio 3 Column */
+
+.photberry_3col{
+    width: 33.33%;
+}
+
+/* Standard Portfolio */
+
+.photberry_standard_portfolio blockquote{
+    margin: -1px 0 31px 0;
+}
+.photberry_standard_portfolio .photberry_sharing{
+    margin-top: 48px;
+}
+.photberry_featured_block{
+    margin: 0 -15px;
+}
+.photberry_featured_block .photberry_grid_item{
+    width: 100%;
+    padding: 0 15px;
+    border: none;
+}
+
+/* Image Portfolio */
+
+.photberry_image_portfolio .photberry_grid_section3{
+    margin: 32px -5px 30px -5px;
+}
+
+/* Video Portfolio */
+
+.photberry_video_portfolio .photberry_post_video_cont{
+    margin-bottom: 35px;
+}
+.photberry_video_portfolio .photberry_production{
+    margin-top: 25px;
+    margin-bottom: 34px;
+}
+
+/* Audio Portfolio */
+
+.photberry_audio_portfolio blockquote{
+    margin: 0 0 16px 0;
+}
+
+/* Gallery Portfolio */
+
+.photberry_gallery_portfolio .photberry_grid_item{
+    width: 100%;
+}
+.photberry_gallery_portfolio .photberry_stand_post_title{
+    margin-bottom: 35px;
+}
+.photberry_gallery_portfolio .photberry_post_cont{
+    margin-bottom: 35px;
+}
+.photberry_gallery_portfolio .photberry_text{
+    margin-bottom: 20px;
+}
+
+/* Grid Portfolio 01 */
+
+.photberry_grid01_portfolio .photberry_grid_portfolio .photberry_grid_item{
+    width: 100%;
+    border: none;
+    float: none;
+}
+.photberry_grid01_portfolio .photberry_stand_post_title{
+    margin-bottom: 35px;
+}
+.photberry_grid01_portfolio .photberry_gallery_section{
+   margin-top: 45px;
+   padding-bottom: 20px;
+}
+
+/* Grid Portfolio 02 */
+
+.photberry_grid02_portfolio .photberry_post_gallery_cont{
+    margin-bottom: 35px;
+}
+.photberry_grid02_portfolio .photberry_slider_item,
+.photberry_grid02_portfolio .photberry_fullwidth_slider{
+    height: 670px;
+}
+.photberry_slider_item_title{
+    position: absolute;
+    right: 40px;
+    bottom: 8px;
+    z-index: 10;
+}
+.photberry_slider_overlay{
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
+.photberry_grid02_portfolio .photberry_fullwidth_slider{
+    margin: 42px 0 40px 0;
+}
+
+/* Video and Images Grid */
+
+.photberry_video_images_grid .photberry_content {
+    padding: 0;
+}
+.photberry_video_images_grid .photberry_grid_section3 {
+    margin: 5px 5px;
+}
+
+/* Albums Grid */
+
+.photberry_albums_grid_2{
+    text-align: center;
+}
+
+.photberry_albums_grid_2 .photberry_content{
+    padding:  0 0 0 0;
+}
+
+.photberry_albums_grid_2 .photberry_load_more{
+    margin: 30px auto;
+}
+
+/* Albums Grid Margin */
+
+.photberry_albums_grid_margin .photberry_content{
+    padding-bottom: 5px;
+}
+
+.photberry_albums_grid_margin .photberry_load_more{
+   margin-bottom: 35px;
+}
+
+/* Albums Masonry Margin */
+
+.photberry_albums_masonry_margin .button-group{
+    padding-top: 0;
+}
+.photberry_albums_masonry_margin .button-group button{
+    padding: 0 15px;
+}
+
+/* Video and Images Slider */
+.photberry_video_images_slider .photberry_fullwidth_slider,
+.photberry_video_images_slider .photberry_slider_item,
+.photberry_video_images_slider{
+   height: 100vh; 
+}
+.photberry_video_images_slider .photberry_slider_item img{
+    max-width: none;
+    min-width: 100%;
+    width: auto;
+}
+
+/* Portrait Slider */
+
+.photberry_portrait_slider .photberry_fullwidth_slider img{
+    height: 100vh;
+    min-width: 1px;
+    width: auto;
+    margin: 0 auto;
+}
+
+/* Masonry Gallery */
+
+.photberry_masonry_gallery{
+    padding: 5px;
+}
+
+/* Split Gallery */
+
+.photberry_split_slider{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.photberry_split_slider_item{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.photberry_split_slider_item img{
+    max-width: none;
+    width: auto;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+}
+.photberry_split_slider_item h2{
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 17px;
+}
+.photberry_split_slider_item:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%); 
+}
+
+.sb_down, .sb_up{
+    display: inline-block;
+    width: 20px;
+    height: 20px; 
+    position: relative;
+    z-index: 15;
+    transform: rotate(45deg);
+    margin: 0 43px;
+}
+.sb_down:hover, .sb_up:hover{
+    cursor: pointer;
+}
+.sb_down{
+    margin-bottom: -12px;
+}
+.sb_up{
+   margin-top: -5px;
+ }
+#scrollbuttons{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.photberry_thumbs_slider{
+    position: relative;
+}
+.photberry_slider_thumbs{
+    position: absolute;
+    width: 162px;
+    height: 100%;
+    top: 0;
+    left: 0;
+     overflow-y: auto;
+      z-index: 101;
+    
+}
+.photberry_slider_thumbs a{
+    display: block;
+    width: 145px;
+}
+.photberry_slider_thumbs a:before{
+    z-index: 106;
+}
+.photberry_slider_thumbs a:hover:before{
+    opacity: 0.7;
+}
+.photberry_slider_thumbs img{
+   position: relative;
+   display: block;
+}
+.photberry_slide_counter{
+    position: absolute;
+    top: 50%;
+    left: 145px;
+    z-index: 110;
+    transform: translateY(-50%);
+    padding-left: 35px;
+}
+.photberry_slider_thumbs::-webkit-scrollbar { 
+    width: 0;
+}
+.photberry_slider_thumbs{
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;  
+}
+.photberry_slide_counter div{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 24px;
+}
+.photberry_slide_counter:before{
+    border-color: transparent transparent transparent #ffffff;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11.5px 0 11.5px 15px;
+}
+
+
+
+.photberry_single_gallery_slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.photberry_transparent_header .photberry_site_wrapper {
+    padding-left: 0;
+}
+.photberry_transparent_header .photberry_site_wrapper .photberry_slider_btn_prev {
+    left: 315px;
+}
+.photberry_transparent_header .photberry_site_wrapper .photberry_slide_counter {
+    left: 415px;
+}
+.photberry_toggled_header .photberry_site_wrapper .photberry_slider_btn_prev {
+    left: 45px;
+}
+.photberry_toggled_header .photberry_site_wrapper .photberry_slider_thumbs {
+    left: 0;
+}
+.photberry_toggled_header .photberry_site_wrapper .photberry_slide_counter {
+    left: 145px;
+}
+
+.photberry_toggled_header .photberry_slider_thumbs,
+.photberry_toggled_header .photberry_slider_btn_prev,
+.photberry_toggled_header .photberry_slide_counter {
+    transition: left 500ms;
+}
+.photberry_transparent_header.photberry_show_header.photberry_toggled_header .photberry_slider_btn_prev {
+    left: 315px;
+}
+.photberry_transparent_header.photberry_show_header.photberry_toggled_header .photberry_slide_counter {
+    left: 415px;
+}
+.photberry_transparent_header.photberry_show_header.photberry_toggled_header .photberry_site_wrapper .photberry_slider_thumbs {
+    left: 270px;
+}
+
+.photberry_transparent_header .photberry_slider_wrapper.has_thumbs .photberry_slider_btn_prev,
+.photberry_toggled_header .photberry_slider_wrapper.has_thumbs .photberry_slider_btn_prev {
+    left: auto;
+}
+.photberry_slider_wrapper {
+    position: relative;
+}
+.photberry_slider_wrapper.auto_height {
+    height: 100%;
+}
+.photberry_slider_wrapper .photberry_slider_slide,
+.photberry_slider_wrapper .photberry_slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.photberry_slider_thumbs_inner {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.photberry_slider_wrapper .photberry_slider_slide,
+.photberry_slider_thumb {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.photberry_slider_wrapper .photberry_slider {
+    transition: opacity 500ms;
+}
+.photberry_slider_wrapper.photberry_module_loading .photberry_slider,
+.photberry_slider_wrapper.photberry_module_loading .photberry_slider_thumbs,
+.photberry_slider_wrapper.photberry_module_loading .photberry_slide_counter,
+.photberry_slider_wrapper.photberry_module_loading .photberry_slider_btn_prev,
+.photberry_slider_wrapper.photberry_module_loading .photberry_slider_btn_next {
+    opacity: 0;
+}
+.photberry_slider_wrapper.photberry_module_loading .photberry_gallery_preloader {
+    opacity: 0;
+}
+.photberry_slider_wrapper .photberry_slider_slide {
+    transition: opacity 1000ms;
+    z-index: 1;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-position:  center;
+}
+.photberry_slider.cover .photberry_slider_slide {
+    background-size: cover;
+}
+.photberry_slider.fit_always .photberry_slider_slide {
+    background-size: contain;
+}
+.photberry_slider.fit_width .photberry_slider_slide {
+    background-size:100% auto;
+}
+.photberry_slider.fit_height .photberry_slider_slide {
+    background-size:auto 100%;
+}
+.photberry_slider_wrapper .photberry_slider_slide.active {
+    opacity: 1;
+    z-index: 5;
+}
+.photberry_slider_overlay,
+.photberry_slider_custom_overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+}
+.photberry_slider_overlay {
+    height: 250px;
+    background: rgba(0,0,0,0.5);
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+}
+.photberry_slider .photberry_slide_title {
+    position:absolute;
+    bottom: 33px;
+    right: 40px;
+    margin: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+.photberry_slide_counter {
+    position: absolute;
+    left: 145px;
+    top: 50%;
+    margin-top: -12px;
+    height: 23px;
+    padding-left: 35px;
+    z-index: 10;
+}
+.photberry_slide_counter:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11.5px 0 11.5px 15px;
+}
+.photberry_slide_counter span {
+    font-size: 13px;
+    line-height: 23px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.photberry_slider_btn_prev,
+.photberry_slider_btn_next {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    position: absolute;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    z-index: 15;
+    position: absolute;
+    top: 50%;
+    margin: -10px 0 0 0;
+}
+
+.photberry_slider_btn_prev:before,
+.photberry_slider_btn_next:before,
+.photberry_slider_btn_prev:after,
+.photberry_slider_btn_next:after {
+    content: '';
+    position: absolute;
+    transition: background 400ms;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.photberry_slider_btn_prev {
+    left: 45px;
+    transform: rotate(45deg);
+}
+.photberry_slider_btn_prev:before {
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 20px;
+}
+.photberry_slider_btn_prev:after {
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+}
+
+.photberry_slider_btn_next {
+    right: 45px;
+    transform: rotate(-45deg);
+}
+.photberry_slider_btn_next:before {
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 20px;
+}
+.photberry_slider_btn_next:after {
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+}
+
+.has_thumbs .photberry_slider_btn_next,
+.has_thumbs .photberry_slider_btn_prev {
+    left: auto;
+    right: 40px;
+    top: 50%;
+}
+.has_thumbs .photberry_slider_btn_prev {
+    margin-top: -46px;
+    transform: rotate(135deg);
+}
+.has_thumbs .photberry_slider_btn_next {
+    margin-top: 30px;
+    transform: rotate(45deg);
+}
+
+.photberry_media_slider .photberry_slider_slide {
+    overflow: hidden;
+}
+.video_cover .photberry_slider_slide #vimeo_player,
+.video_cover .photberry_slider_slide iframe {
+    position: absolute;
+    left: 50%;  
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-width: none;
+    max-height: none;
+    transform: translate(-50%,-50%);
+}
+.video_fit .photberry_slider_slide #vimeo_player,
+.video_fit .photberry_slider_slide iframe {
+    position: absolute;
+    left: 0%;   
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-width: none;
+    max-height: none;
+}
+#vimeo_player{
+    background: #000;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1600px) {
+    .photberry_fullwidth_slider .owl-item img {
+        max-width: none;
+        width: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 130%;
+    }
+    .photberry_portrait_slider  .owl-item img{
+        height: 100vh;
+        transform: none;
+        left: auto;
+        top: 0;
+    }
+}
+ @media only screen and (max-width: 1480px) {
+    .photberry_container{
+        width: 960px;
+    }
+    .photberry_right_sidebar .photberry_content{
+        width: 690px;
+        padding-right: 20px;
+    }
+    .photberry_sidebar{
+        width: 270px;
+        padding-left: 20px;
+    }
+    .photberry_blog_left_sidebar .photberry_sidebar{
+        padding-right: 20px;
+    }
+    .photberry_blog_left_sidebar .photberry_content {
+        padding-right: 0px;
+        padding-left: 20px;
+    }
+ }
+ @media only screen and (max-width: 1260px) {
+    .photberry_site_wrapper{
+         padding-left: 0;
+         transition: all 1s;
+          
+    }
+    .photberry_header{
+          left: -270px;
+          transition: left 0.5s;
+    }
+    .photberry_menu_btn{
+          display: block ;
+          float: left;
+          position: fixed;
+          transition: left 0.5s;
+    }
+ }
+@media only screen and (max-width: 1025px) {
+     section, .photberry_content, .photberry_blockquote, .photberry_headings, section.photberry_title_w_text, .photberry_about1 section, .photberry_posts_item,
+     .photberry_about_video, .photberry_about4_1, section.photberry_get_in_touch, .photberry_center_slider_section, section.photberry_gallery_section1,
+     .photberry_book .photberry_about2_3, .photberry_standard_post_item{
+        padding-bottom: 30px;
+     } 
+     footer .photberry_widget,
+     .photberry_widget, .photberry_title_page, .photberry_post_nav, .photberry_blog_title{
+        margin-bottom: 30px;
+     }
+     .photberry_headings_title{
+        margin-bottom: 20px;
+     }
+     .photberry_footer, .photberry_pagination{
+        padding-top: 30px;
+     }
+     .photberry_about3 .photberry_img_block{
+        margin-bottom: 20px;
+    }
+     .photberry_contact_2_wraper{
+        padding: 0 30px;
+    }
+    .photberry_about2_1{
+        padding-bottom: 30px;
+    }
+    .photberry_contact_block hr, .photberry_post_tags, .photberry_sharing{
+        margin: 30px 0;
+    }
+    .photberry_post_nav{
+        padding: 30px 0;
+    }
+    .photberry_portfolio_1col_item, .photberry_portfolio_1col .photberry_load_more, .photberry_portfolio_4_column .photberry_load_more{
+        margin-top: 30px;
+    }
+    .photberry_portfolio_1col .photberry_load_more, .photberry_portfolio_2col .photberry_load_more{
+        margin-bottom: 0;
+    }
+    .photberry_portfolio_2col .photberry_load_more{
+        margin-top: 0;
+    }
+    .photberry_portfolio_4_column .photberry_portfolio_2col .photberry_load_more{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .photberry_gallery_section2 .photberry_load_more, .photberry_gallery_section3 .photberry_load_more{
+        margin: 30px auto;
+    }
+}
+ @media only screen and (max-width: 992px) {
+    .photberry_sidebar{
+        width: 290px;
+        padding-left: 20px;
+        padding-right: 20px;
+     }
+    .photberry_right_sidebar .photberry_content{
+        width: 434px;
+    }
+    .photberry_container{
+        width: 724px;
+    }
+    .photberry_counts .col-3,
+    footer .photberry_widget{
+        width: 50%;
+     }
+     section.photberry_counts_section{
+        padding-bottom: 0;
+    }
+     .photberry_counts .col-3, .photberry_testimonials_page h2{
+        margin-bottom: 30px;
+     }
+     .photberry_get_in_touch_block{
+        text-align: center;
+     }
+    .photberry_get_in_touch_block a{
+        float: none;
+        margin: 0 0 65px 0;
+    }
+    .photberry_get_in_touch_block h1{
+        padding: 62px 30px 50px 30px;
+        margin: 0;
+    }
+    .photberry_testimonials_section .photberry_testimonials_item1{
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+    .photberry_grid_item2, .photberry_blog_posts .photberry_grid_item{
+        width: 100%;
+    }
+    .photberry_testimonials_page .photberry_get_in_touch, .photberry_contact_1_1{
+        padding-bottom: 30px;
+    }
+    .photberry_post_video_cont iframe{
+        height: 180px;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .first{
+        order: 1;
+    }
+    body{
+        background: #f7f7f7 !important;
+    }
+    .photberry_container, .photberry_counts_section .col-3, .photberry_grid_item, .photberry_grid_section3 .photberry_grid_item,
+    .photberry_gallery_section_masonry .photberry_grid_item{
+        width: 100%;
+    }
+    .photberry_container, .photberry_content.photberry_section_w_margin{
+        padding: 0 15px;
+    }
+    .photberry_typography>.photberry_container, .photberry_contact_1>.photberry_container, .photberry_blog_right_sidebar>.photberry_container,
+    .photberry_standard_post>.photberry_container, .photberry_get_in_touch>.photberry_container {
+        padding: 0;
+    }
+    .photberry_right_sidebar .photberry_content{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .photberry_sidebar{
+        padding-right: 20px;
+     }
+     section, .photberry_blockquote, .photberry_headings, .photberry_team_item, .photberry_offices_item{
+        padding-bottom: 20px;
+     } 
+     .photberry_team{
+        padding-bottom: 0;
+     }
+     .photberry_mobile_header{
+         display: block;
+         z-index: 10;
+     }
+     .photberry_menu_btn{
+        display: none;  
+    }
+    .photberry_mobile_menu_btn{
+          display: block;
+          position: relative;
+          margin-bottom: -40px;
+    }
+     .photberry_mobile_header_container{
+         display: none;
+    }
+     .photberry_header{
+          margin-left: 0px;
+          position: relative;
+          width: 100%;
+          display: none;
+    }
+    .menu-item-has-children .photberry_sub_menu{
+        padding-top: 10px;
+    }
+    .photberry_sub_menu li:last-child{
+        padding-bottom: 0;
+    }
+    .photberry_header_footer{
+     position: static;
+    }
+    .photberry_logo_cont{
+          padding-bottom: 40px; 
+    }
+    .photberry_menu_cont li{
+          padding-top: 10px;
+          padding-bottom: 10px;
+    }
+    .photberry_header_footer{
+          padding-top: 30px;
+          padding-bottom: 30px;
+    }
+    
+    .photberry_fullwidth_slider{
+        height: 350px;
+    } 
+    .photberry_fullwidth_slider .owl-item img{
+        height: 100%;
+        width: auto;
+    }
+    .photberry_video_images_slider .photberry_fullwidth_slider, .photberry_video_images_slider .photberry_media_slider, .photberry_split_slider{
+        height: 100%;
+        /*overflow-y: visible;*/
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .photberry_video_images_slider .photberry_fullwidth_slider{
+        height: calc(100vh + 50px) !important;
+    }
+    .photberry_video_images_slider .photberry_slider_item, .photberry_split_slider_item{
+        height: calc(100vh + 50px); 
+    }
+    .photberry_about3 .photberry_partners,
+    .photberry_link_item{
+        padding-bottom: 25px;
+    }
+    .photberry_link_item p{
+        margin-bottom: 15px;
+    }
+    .photberry_link_item h6{
+        margin-top: 0;
+    }
+    .photberry_blog_grid .photberry_button{
+        margin: 0;
+    }
+    .photberry_grid_item1_1{
+        height: auto;
+    }
+    .photberry_grid_item1_1 a{
+        transform: none;
+    }
+    .photberry_partners_item{
+        text-align: center;
+    }
+    .photberry_testimonials_content p{
+        padding: 0 60px 27px 60px;
+    }
+    .photberry_testimonials_slider .owl-next{
+        right: 20px;
+    }
+    .photberry_testimonials_slider .owl-prev{
+        left: 20px;
+    }
+    section.photberry_testimonials{
+        margin-bottom: 0px;
+    }
+    .photberry_about2_1 .photberry_img_block, .photberry_portfolio_1col_item .photberry_img_block{
+        padding: 0;
+    }
+    .photberry_price_item{
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+    .photberry_testimonials1 .photberry_container{
+        padding: 0;
+    }
+    .photberry_testimonials_item1 p{
+        padding: 35px 40px 34px 40px;
+    }
+    .photberry_gallery_section {
+        margin: 0 -15px;
+    }
+    .tabs ul {
+        margin-top: -1px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .photberry_price .photberry_img_block img{
+        transform: none;
+        top: 0;
+    }
+    .photberry_choose .photberry_about2_3{
+        padding: 0;
+    }
+    .photberry_choose .photberry_img_block{
+        margin-bottom: 20px;
+    }
+    .countdown-amount {
+        font-size: 80px;
+        line-height: 90px;
+    }
+    .photberry_contact_1_1_item p + h5{
+        margin-top: 30px;
+    }
+    p.photberry_contact_1_1_text{
+        margin-bottom: 30px;
+    }
+    .photberry_follow_block, .photberry_phone{
+        text-align: center;
+    }
+    .photberry_contact_2_center hr{
+        margin: 30px 0;
+    }
+     .photberry_blog_left_sidebar .photberry_sidebar{
+        padding-left: 20px;
+    }
+    .photberry_blog_left_sidebar .photberry_content {
+        padding-right: 20px;       
+    }
+    .photberry_portfolio_cont{
+        padding-left: 0;
+    }
+    .photberry_featured_block .photberry_grid_item{
+        padding-bottom: 20px;
+    }
+    .photberry_slider_thumbs, .photberry_slide_counter{
+        display: none;
+    }
+    .photberry_slider_item_title{
+        width: 90%;
+    }
+    .photberry_slider_slide iframe{
+        height: 100% !important;
+    }
+    .photberry_video_images_slider .photberry_slider_item_title,
+    .photberry_split_slider_item  .photberry_slider_item_title{
+        bottom: 58px;
+    }
+    .photberry_slider_btn_prev, .photberry_slider_btn_next{
+        position: fixed;
+        z-index: 9;
+    }
+    .photberry_split_slider{
+        height: 100%;
+        width: 100%;
+    }
+    #scrollbuttons{
+        width: 100%;
+        position: fixed;
+    }
+}
+@media only screen and (max-width: 480px) {
+     .photberry_right_sidebar .photberry_content,
+     .photberry_sidebar{
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+     .photberry_tabs li{
+        margin: 0 15px;
+     }
+     .countdown-amount {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .photberry_cs_title{
+        margin-bottom: 30px;
+    }
+    .photberry_content_cs .photberry_subscribe_block{
+        padding-top: 40px;
+    }
+    .photberry_sharing a{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-height: 667px) {
+    .photberry_contact_2_page, .photberry_404_page, .photberry_404_page:before{
+        overflow-y:  visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .photberry_contact_2_center{
+        transform: none;
+        position: static;
+        height: auto;
+    }
+}
+@media only screen and (max-height: 415px) {
+     .countdown-amount {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .photberry_cs_title{
+        margin-bottom: 5px;
+    }
+    .photberry_content_cs .photberry_subscribe_block, .photberry_logo_cont{
+        padding-top: 20px;
+    }
+    .photberry_cs_footer{
+        padding-bottom: 0;
+    }
+    .countdown-period{
+        padding-top: 10px;
+    }
+    .photberry_coming_soon .photberry_social{
+        padding-bottom: 5px;
+    }
+}
+
+
+.central-p {
+    text-align: center !important;
+}
